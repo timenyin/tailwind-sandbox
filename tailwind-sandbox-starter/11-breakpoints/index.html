@@ -8,7 +8,19 @@
     <title>Breakpoints & Media Queries</title>
   </head>
   <!-- Tailwind is mobile-first -->
-  <body></body>
+  <body
+    class="bg-balck sm:bg-green-800 md:bg-amber-800 lg:bg-blue-800 xl:bg-red-800 2xl:bg-pink-500 sm:bg-gree"
+  >
+    <h1 class="text-white text-4xl md:text-3xl">Heading</h1>
+    <script>
+      function showBrowersWidth() {
+        const width = window.innerWidth;
+        document.querySelector("h1").innerText = `Width: ${width}px`;
+      }
+      window.onload = showBrowersWidth;
+      window.onresize = showBrowersWidth;
+    </script>
+  </body>
 </html>
 
 <!-- Breakpoint Classes
